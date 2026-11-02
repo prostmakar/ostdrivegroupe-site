@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OSTdrivegroupe — расходники для кузовного ремонта и инженерные проекты</title>
+  <meta name="description" content="OSTdrivegroupe: прямые поставки расходных материалов для покраски и кузовного ремонта авто от производителей из Китая. Оптовые цены для автомастерских. Инженерные проекты в области транспорта.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="OSTdrivegroupe — на главную">
+      <img src="logo.svg" alt="" width="34" height="34">
+      <span class="brand__name"><b>OST</b>drivegroupe</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="catalog.html">Расходники</a>
+      <a href="workshops.html">Мастерским</a>
+      <a href="lab.html">Инженерия</a>
+      <a href="investors.html">Инвесторам</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html" data-modal class="btn btn--accent nav__cta">Получить прайс <span class="arr">↗</span></a>
+    </nav>
+    <a href="contacts.html" data-modal class="btn btn--accent header__cta">Получить прайс <span class="arr">↗</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ ЭКРАН 1 ============ -->
+<section class="hero screen" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="container hero__wrap">
+    <div class="hero__body">
+      <div class="hero__text">
+        <h1 class="hero__title">
+          <span class="line">Расходники</span>
+          <span class="line">для покраски</span>
+          <span class="line"><span class="outline">напрямую</span></span>
+          <span class="line">с заводов<span class="accent">.</span></span>
+        </h1>
+        <p class="hero__lead">Абразивы, маскировка и&nbsp;полировка для автомастерских — без посредников и&nbsp;переплат. А&nbsp;доход от&nbsp;поставок мы&nbsp;вкладываем в&nbsp;собственные инженерные разработки.</p>
+        <div class="hero__actions">
+          <a href="contacts.html" data-modal class="btn btn--accent btn--lg">Получить оптовый прайс <span class="arr">↗</span></a>
+          <a href="lab.html" class="btn btn--ghost btn--lg">OST Lab <span class="arr">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <svg class="disc" viewBox="-260 -260 520 520">
+          <defs>
+            <filter id="grit" x="-10%" y="-10%" width="120%" height="120%">
+              <feTurbulence type="fractalNoise" baseFrequency="1.4" numOctaves="2" seed="3"/>
+              <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.6 1.15"/>
+              <feComposite in2="SourceGraphic" operator="in"/>
+              <feBlend in="SourceGraphic" mode="multiply"/>
+            </filter>
+            <radialGradient id="discShade" cx="35%" cy="30%" r="80%">
+              <stop offset="0" stop-color="#ff7a45"/>
+              <stop offset="1" stop-color="#d9430f"/>
+            </radialGradient>
+          </defs>
+          <g class="disc__axes">
+            <line x1="-250" y1="0" x2="250" y2="0"/>
+            <line x1="0" y1="-250" x2="0" y2="250"/>
+            <circle r="236"/>
+          </g>
+          <g class="disc__spin">
+            <circle r="200" fill="url(#discShade)" filter="url(#grit)"/>
+            <circle r="200" class="disc__edge"/>
+            <g id="holes"></g>
+            <circle r="34" fill="#0b0d10"/>
+            <circle r="46" class="disc__ring"/>
+            <text class="disc__label" y="-92" text-anchor="middle">OST · P120</text>
+          </g>
+        </svg>
+        <div class="callout callout--1 mono"><b>Ø 150 мм</b><span>диаметр</span></div>
+        <div class="callout callout--2 mono"><b>P40 — P2000</b><span>зернистость</span></div>
+        <div class="callout callout--3 mono"><b>15 отв.</b><span>пылеудаление</span></div>
+      </div>
+    </div>
+
+    <div class="route" aria-label="Маршрут поставки: завод в Китае, склад в Минске, ваша СТО">
+      <div class="route__point"><i></i><b>Завод</b><span class="mono">Китай</span></div>
+      <div class="route__line"><span class="route__dot"></span></div>
+      <div class="route__point"><i></i><b>Склад</b><span class="mono">Минск</span></div>
+      <div class="route__line"><span class="route__dot route__dot--2"></span></div>
+      <div class="route__point route__point--end"><i></i><b>Ваша СТО</b><span class="mono">Беларусь</span></div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Абразивные диски</span><span>Зачистные круги</span><span>Маскировка</span><span>Малярная лента</span><span>Полировка</span><span>PPS-системы</span><span>СИЗ</span><span>Инструмент</span>
+      <span>Абразивные диски</span><span>Зачистные круги</span><span>Маскировка</span><span>Малярная лента</span><span>Полировка</span><span>PPS-системы</span><span>СИЗ</span><span>Инструмент</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЭКРАН 2 ============ -->
+<section class="screen screen--dirs" id="directions">
+  <div class="dirs">
+    <a href="catalog.html" class="dir dir--supply">
+      <div class="dir__top mono"><span>(01)</span><span><i class="dot dot--live"></i>Работает</span></div>
+      <div class="dir__word">Supply</div>
+      <p>Расходные материалы для кузовного ремонта и&nbsp;покраски. Опт и&nbsp;мелкий опт для СТО.</p>
+      <span class="dir__more mono">Каталог расходников →</span>
+    </a>
+    <a href="lab.html" class="dir dir--lab">
+      <div class="dir__top mono"><span>(02)</span><span><i class="dot dot--dev"></i>В разработке</span></div>
+      <div class="dir__word">Lab</div>
+      <p>Датчики, подъёмное оборудование, гибридные силовые установки. Открыты для инвесторов.</p>
+      <span class="dir__more mono">Инженерные проекты →</span>
+    </a>
+  </div>
+  <div class="footbar mono">
+    <span>© <span class="year"></span> OSTdrivegroupe</span>
+    <span class="footbar__links"><a href="investors.html">Инвесторам</a><a href="contacts.html">Контакты</a></span>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

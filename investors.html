@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Инвесторам и партнёрам — OSTdrivegroupe</title>
+  <meta name="description" content="Модель OSTdrivegroupe: поставки расходников финансируют инженерные разработки. План развития и условия участия для инвесторов.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header header--solid">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="OSTdrivegroupe — на главную">
+      <img src="logo.svg" alt="" width="34" height="34">
+      <span class="brand__name"><b>OST</b>drivegroupe</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="catalog.html">Расходники</a>
+      <a href="workshops.html">Мастерским</a>
+      <a href="lab.html">Инженерия</a>
+      <a href="investors.html" class="is-active">Инвесторам</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html" data-modal class="btn btn--accent nav__cta">Получить прайс <span class="arr">↗</span></a>
+    </nav>
+    <a href="contacts.html" data-modal class="btn btn--accent header__cta">Получить прайс <span class="arr">↗</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="section section--paper page-top">
+  <div class="container">
+    <div class="head">
+      <nav class="crumbs mono"><a href="index.html">Главная</a> / <span>Инвесторам</span></nav>
+      <span class="head__idx mono">(04) — Инвесторам и партнёрам</span>
+      <h1 class="head__title">Торговля<br>финансирует<br><span class="accent-dark">инженерию</span></h1>
+    </div>
+
+    <div class="cycle">
+      <div class="cycle__node cycle__node--supply"><span class="mono">01</span><b>Поставки</b><p>Клиенты и&nbsp;выручка уже сейчас</p></div>
+      <div class="cycle__arrow" aria-hidden="true">→</div>
+      <div class="cycle__node"><span class="mono">02</span><b>Прибыль</b><p>Стабильный денежный поток</p></div>
+      <div class="cycle__arrow" aria-hidden="true">→</div>
+      <div class="cycle__node cycle__node--lab"><span class="mono">03</span><b>R&amp;D</b><p>Прототипы и&nbsp;испытания</p></div>
+      <div class="cycle__arrow" aria-hidden="true">→</div>
+      <div class="cycle__node cycle__node--dark"><span class="mono">04</span><b>Продукты</b><p>Серийное производство</p></div>
+    </div>
+    <p class="cycle__note">Инвестор заходит не&nbsp;в&nbsp;«голую идею», а&nbsp;в&nbsp;компанию с&nbsp;работающим торговым направлением и&nbsp;клиентами.</p>
+
+    <ol class="roadmap">
+      <li class="is-now"><span class="mono">Сейчас</span><h3>Поставки</h3><p>Контракты с&nbsp;производителями, первые СТО-клиенты, логистика.</p></li>
+      <li><span class="mono">Этап 2</span><h3>Масштаб</h3><p>Свой склад, рост клиентской базы, расходники под маркой OST.</p></li>
+      <li><span class="mono">Этап 3</span><h3>OST Lab</h3><p>Инженерная команда, прототипы датчика и&nbsp;подъёмника.</p></li>
+      <li><span class="mono">Этап 4</span><h3>Производство</h3><p>Серийный выпуск, выход на&nbsp;рынки СНГ и&nbsp;ЕС.</p></li>
+    </ol>
+
+    <div class="invest">
+      <div class="invest__text">
+        <h3>Обсудим участие?</h3>
+        <p>Пришлём презентацию: модель бизнеса, показатели поставок и&nbsp;план по&nbsp;каждому инженерному проекту.</p>
+      </div>
+      <a href="contacts.html?type=partner" data-modal data-tab="partner" class="btn btn--dark btn--lg">Запросить презентацию <span class="arr">↗</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <nav class="footer__nav">
+        <a href="catalog.html">Расходники</a>
+        <a href="workshops.html">Мастерским</a>
+        <a href="lab.html">Инженерия</a>
+        <a href="investors.html">Инвесторам</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <p class="mono">© <span class="year"></span> OSTdrivegroupe · Supply &amp; Engineering</p>
+    </div>
+    <div class="footer__word" aria-hidden="true"><b>OST</b>drivegroupe</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

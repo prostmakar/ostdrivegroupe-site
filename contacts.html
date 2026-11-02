@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — OSTdrivegroupe</title>
+  <meta name="description" content="Свяжитесь с OSTdrivegroupe: оптовый прайс на расходники для автомастерских, сотрудничество и инвестиции.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header header--solid">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="OSTdrivegroupe — на главную">
+      <img src="logo.svg" alt="" width="34" height="34">
+      <span class="brand__name"><b>OST</b>drivegroupe</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="catalog.html">Расходники</a>
+      <a href="workshops.html">Мастерским</a>
+      <a href="lab.html">Инженерия</a>
+      <a href="investors.html">Инвесторам</a>
+      <a href="contacts.html" class="is-active">Контакты</a>
+      <a href="contacts.html" data-modal class="btn btn--accent nav__cta">Получить прайс <span class="arr">↗</span></a>
+    </nav>
+    <a href="contacts.html" data-modal class="btn btn--accent header__cta">Получить прайс <span class="arr">↗</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="section section--ink page-top">
+  <div class="container contacts">
+    <div class="contacts__info">
+      <nav class="crumbs mono"><a href="index.html">Главная</a> / <span>Контакты</span></nav>
+      <span class="head__idx mono">(05) — Контакты</span>
+      <h1 class="head__title">Давайте<br><span class="accent">работать</span></h1>
+      <p class="head__lead">Ответим в&nbsp;течение рабочего дня. Прайс отправляем на&nbsp;email.</p>
+      <!-- TODO: заменить на реальные контакты -->
+      <ul class="contacts__list">
+        <li><span class="mono">Телефон</span><a href="tel:+375000000000">+375 (00) 000-00-00</a></li>
+        <li><span class="mono">Email</span><a href="mailto:info@ostdrivegroupe.by">info@ostdrivegroupe.by</a></li>
+        <li><span class="mono">Telegram</span><a href="https://t.me/ostdrivegroupe">@ostdrivegroupe</a></li>
+        <li><span class="mono">Адрес</span>г. Минск</li>
+        <li><span class="mono">Часы</span>Пн–Пт 9:00–18:00</li>
+      </ul>
+    </div>
+
+    <form class="form" id="form" novalidate>
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab is-active" data-tab="workshop" role="tab" aria-selected="true">Автомастерская</button>
+        <button type="button" class="tab" data-tab="partner" role="tab" aria-selected="false">Инвестор / партнёр</button>
+      </div>
+      <input type="hidden" name="type" value="workshop">
+
+      <label class="field"><input name="name" required autocomplete="name" placeholder=" "><span>Имя *</span></label>
+      <label class="field"><input name="company" autocomplete="organization" placeholder=" "><span>Компания</span></label>
+      <div class="field-row">
+        <label class="field"><input name="phone" type="tel" required autocomplete="tel" placeholder=" "><span>Телефон *</span></label>
+        <label class="field"><input name="email" type="email" autocomplete="email" placeholder=" "><span>Email</span></label>
+      </div>
+      <label class="field" data-only="workshop"><input name="product" placeholder=" "><span>Что интересует</span></label>
+      <label class="field"><textarea name="message" rows="3" placeholder=" "></textarea><span>Комментарий</span></label>
+
+      <button class="btn btn--accent btn--lg btn--block form__submit" type="submit">Получить прайс <span class="arr">↗</span></button>
+      <p class="form__hint">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+      <p class="form__status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <nav class="footer__nav">
+        <a href="catalog.html">Расходники</a>
+        <a href="workshops.html">Мастерским</a>
+        <a href="lab.html">Инженерия</a>
+        <a href="investors.html">Инвесторам</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <p class="mono">© <span class="year"></span> OSTdrivegroupe · Supply &amp; Engineering</p>
+    </div>
+    <div class="footer__word" aria-hidden="true"><b>OST</b>drivegroupe</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

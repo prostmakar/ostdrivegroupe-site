@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OST Lab — инженерные проекты OSTdrivegroupe</title>
+  <meta name="description" content="Инженерные проекты OSTdrivegroupe: датчик объёма жидкости, подъёмник для людей с инвалидностью, гибридные силовые установки.">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="header header--solid">
+  <div class="container header__inner">
+    <a href="index.html" class="brand" aria-label="OSTdrivegroupe — на главную">
+      <img src="logo.svg" alt="" width="34" height="34">
+      <span class="brand__name"><b>OST</b>drivegroupe</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="catalog.html">Расходники</a>
+      <a href="workshops.html">Мастерским</a>
+      <a href="lab.html" class="is-active">Инженерия</a>
+      <a href="investors.html">Инвесторам</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="contacts.html" data-modal class="btn btn--accent nav__cta">Получить прайс <span class="arr">↗</span></a>
+    </nav>
+    <a href="contacts.html" data-modal class="btn btn--accent header__cta">Получить прайс <span class="arr">↗</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="section section--blueprint page-top">
+  <div class="bp-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="head">
+      <nav class="crumbs mono"><a href="index.html">Главная</a> / <span>Инженерия</span></nav>
+      <span class="head__idx mono">(03) — OST Lab</span>
+      <h1 class="head__title">Инженерия,<br>которая едет <span class="outline outline--lab">дальше</span></h1>
+      <p class="head__lead">Поставки — фундамент. Следующий шаг — собственные разработки для транспорта и&nbsp;людей. Мы&nbsp;честно показываем стадию каждого проекта.</p>
+    </div>
+
+    <div class="sheets">
+      <article class="sheet">
+        <svg class="sheet__draw" viewBox="0 0 320 200" aria-hidden="true">
+          <rect x="110" y="30" width="100" height="140" rx="10"/>
+          <path class="liquid" d="M112 100 q24 -8 48 0 t48 0 V160 a8 8 0 0 1 -8 8 H120 a8 8 0 0 1 -8 -8z"/>
+          <rect x="150" y="18" width="20" height="12"/>
+          <path class="dim" d="M240 30 V170 M234 30 h12 M234 170 h12 M240 100 h-26"/>
+          <text x="250" y="104" class="t">h = ?</text>
+          <path class="dim" d="M110 186 H210 M110 180 v12 M210 180 v12"/>
+          <text x="148" y="198" class="t">V, л</text>
+          <circle cx="80" cy="100" r="16"/><path d="M80 100 l8 -8 M64 100 H40 M96 100 H110"/>
+          <text x="20" y="80" class="t">SENSOR</text>
+        </svg>
+        <div class="sheet__body">
+          <h3>Датчик объёма жидкости</h3>
+          <p>Точное измерение уровня и&nbsp;расхода топлива, масла, ЛКМ. Учёт и&nbsp;контроль списаний для автопарков и&nbsp;малярных цехов.</p>
+        </div>
+        <div class="stamp mono">
+          <div><span>Лист</span><b>01</b></div>
+          <div><span>Проект</span><b>OST-FLS</b></div>
+          <div class="stamp__stage" data-stage="2"><span>Стадия</span><b></b><i></i></div>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <svg class="sheet__draw" viewBox="0 0 320 200" aria-hidden="true">
+          <path d="M30 40 H170 V170 H30z"/>
+          <path d="M30 90 H170" class="thin"/>
+          <path d="M170 150 H270 V160 H170"/>
+          <path d="M190 160 V180 M250 160 V180 M180 180 H260"/>
+          <path class="arrow-up" d="M285 150 V70 M278 80 L285 68 L292 80"/>
+          <circle cx="225" cy="110" r="10"/><path d="M225 120 v20 M212 130 h26 M225 140 l-10 10 M225 140 l10 10"/>
+          <path class="dim" d="M20 40 V170 M14 40 h12 M14 170 h12"/>
+          <text x="60" y="70" class="t">ВАН / MPV</text>
+          <text x="196" y="196" class="t">≤ 300 кг</text>
+        </svg>
+        <div class="sheet__body">
+          <h3>Подъёмник для людей с&nbsp;инвалидностью</h3>
+          <p>Компактная платформа для посадки в&nbsp;автомобиль и&nbsp;микроавтобус. Доступная альтернатива импортным решениям.</p>
+        </div>
+        <div class="stamp mono">
+          <div><span>Лист</span><b>02</b></div>
+          <div><span>Проект</span><b>OST-LFT</b></div>
+          <div class="stamp__stage" data-stage="1"><span>Стадия</span><b></b><i></i></div>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <svg class="sheet__draw" viewBox="0 0 320 200" aria-hidden="true">
+          <rect x="30" y="60" width="90" height="80" rx="6"/>
+          <path d="M45 60 V45 H105 V60 M50 80 h60 M50 100 h60 M50 120 h60" class="thin"/>
+          <text x="48" y="160" class="t">ДВС</text>
+          <circle cx="175" cy="100" r="30"/><circle cx="175" cy="100" r="10"/>
+          <text x="160" y="160" class="t">Э/М</text>
+          <rect x="235" y="70" width="60" height="60" rx="4"/>
+          <path d="M255 85 l-8 16 h14 l-8 16" class="bolt"/>
+          <text x="242" y="160" class="t">АКБ</text>
+          <path class="dim" d="M120 100 H145 M205 100 H235"/>
+        </svg>
+        <div class="sheet__body">
+          <h3>Гибридные силовые установки</h3>
+          <p>Гибридизация ДВС для коммерческого транспорта: меньше расход и&nbsp;выбросы без замены автомобиля.</p>
+        </div>
+        <div class="stamp mono">
+          <div><span>Лист</span><b>03</b></div>
+          <div><span>Проект</span><b>OST-HYB</b></div>
+          <div class="stamp__stage" data-stage="1"><span>Стадия</span><b></b><i></i></div>
+        </div>
+      </article>
+
+      <a href="contacts.html?type=partner" data-modal data-tab="partner" class="sheet sheet--open">
+        <div class="sheet__plus">+</div>
+        <div class="sheet__body">
+          <h3>Ваша идея</h3>
+          <p>Инженер с&nbsp;проектом для транспорта или доступной среды? Рассмотрим совместную разработку.</p>
+        </div>
+        <span class="link-lab mono">Предложить проект →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band cta-band--lab">
+  <div class="container cta-band__inner">
+    <h2>Хотите участвовать в&nbsp;разработке?</h2>
+    <a href="investors.html" class="btn btn--dark btn--lg">Инвесторам <span class="arr">↗</span></a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <nav class="footer__nav">
+        <a href="catalog.html">Расходники</a>
+        <a href="workshops.html">Мастерским</a>
+        <a href="lab.html">Инженерия</a>
+        <a href="investors.html">Инвесторам</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <p class="mono">© <span class="year"></span> OSTdrivegroupe · Supply &amp; Engineering</p>
+    </div>
+    <div class="footer__word" aria-hidden="true"><b>OST</b>drivegroupe</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
